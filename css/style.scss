@@ -114,6 +114,8 @@ body {
     font-size: 0.75rem;
 
     background-color: white;
+
+    cursor: pointer;
   }
 }
 
@@ -124,6 +126,10 @@ body {
 
   color: white;
   background-color: $primary-violet;
+
+  & * {
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -162,11 +168,29 @@ body {
       padding: 1rem 3.5rem;
 
       font-size: 1rem;
+
+      &:hover {
+        background-color: $primary-magenta;
+        color: white;
+        box-shadow: 0px 0px 8px 2px darken($primary-violet, 18%);
+      }
+      &:active {
+        background-color: darken($primary-magenta, 18%);
+        color: white;
+        box-shadow: 0px 0px 8px 2px darken($primary-violet, 18%);
+      }
     }
   }
 
   .socials {
     font-size: 1.75rem;
     justify-content: flex-end;
+
+    & *:hover {
+      color: darken($primary-magenta, 18%);
+    }
+    & *:active {
+      color: $primary-magenta;
+    }
   }
 }
