@@ -169,7 +169,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1220px) {
   body {
     max-width: 1440px !important;
     max-height: 100vh;
@@ -182,8 +182,14 @@ body {
     padding: 3rem 0 2rem 0;
     text-align: left;
 
+    border: solid red;
+
     &__image {
       width: 50%;
+    }
+
+    &__container {
+      flex: 1;
     }
 
     &__title {
