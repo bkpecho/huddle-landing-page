@@ -180,7 +180,6 @@ body {
   .huddle {
     @include flex(row, 2.5rem);
     padding: 5rem 0 2rem 0;
-    justify-content: center;
     text-align: left;
 
     &__image {
