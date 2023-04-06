@@ -1,1 +1,70 @@
-/* Variables *//*# sourceMappingURL=style.css.map */
+/* Variables */
+/* Mixins */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-image: url(/images/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  max-width: 375px;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.huddle {
+  color: white;
+  text-align: center;
+}
+.huddle__image {
+  width: 100%;
+}
+.huddle__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  align-items: space-between;
+}
+.huddle__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.huddle__paragraph {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+}
+.huddle__button {
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  padding: 1rem 0;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  background-color: white;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: white;
+  background-color: hsl(257, 40%, 49%);
+}/*# sourceMappingURL=style.css.map */

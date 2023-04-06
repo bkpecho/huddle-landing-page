@@ -25,6 +25,8 @@ $ff-headings: 'Poppins', sans-serif;
 
 $ff-body: 'Open Sans', sans-serif;
 
+$fs-base: 16px;
+
 $fw-regular: 400;
 $fw-bold: 600;
 
@@ -35,3 +37,85 @@ $fw-bold: 600;
 // - [Font Awesome](https://fontawesome.com/)
 // - [IcoMoon](https://icomoon.io/)
 // - [Ionicons](https://ionicons.com/)
+
+/* Mixins */
+
+@mixin flex($direction, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $fs-base;
+}
+
+body {
+  @include flex(column, 0);
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-image: url(/images/bg-mobile.svg);
+  background-color: $primary-violet;
+
+  max-width: 375px;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.huddle {
+  color: white;
+  text-align: center;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__container {
+    @include flex(column, 1.5rem);
+    margin: 2rem 0;
+
+    align-items: space-between;
+  }
+
+  &__title {
+    font-family: $ff-headings;
+    font-size: 1.5rem;
+    font-weight: $fw-bold;
+
+    line-height: 2rem;
+  }
+
+  &__paragraph {
+    font-family: $ff-body;
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    text-decoration: none;
+    color: $primary-violet;
+    padding: 1rem 0;
+    margin: 0 2rem;
+    border-radius: 2rem;
+
+    font-family: $ff-headings;
+    font-size: 0.75rem;
+
+    background-color: white;
+  }
+}
+
+.socials {
+  @include flex(row, 1rem);
+  justify-content: center;
+  font-size: 1.25rem;
+
+  color: white;
+  background-color: $primary-violet;
+}
