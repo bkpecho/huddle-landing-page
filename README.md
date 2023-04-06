@@ -25,17 +25,17 @@ Users should be able to:
 
 #### Mobile View
 
-![](/screenshot/mobile-view.png)
+![](/screenshots/mobile-view.png)
 
 #### Desktop View
 
-![](/screenshot/desktop-view.png)
+![](/screenshots/desktop-view.png)
 
 The above screenshots show how the website looks on both mobile and desktop screens. The design is responsive and adjusts to different screen sizes using the mobile-first approach and flexbox layout. The use of colors, typography, and layout elements is consistent throughout the website, giving it a professional and cohesive look.
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor]()
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-using-flexbox-and-sass-AjrteqpVOk)
 - Live Site URL: [Netlify](https://bk-huddle-landing-page.netlify.app/)
 
 ## My process
