@@ -63,6 +63,8 @@ body {
 
   max-width: 375px;
   min-height: 100vh;
+
+  margin: 0 auto;
 }
 
 .logo {
@@ -92,6 +94,10 @@ body {
     line-height: 2rem;
   }
 
+  &__fans {
+    display: inline-block;
+  }
+
   &__paragraph {
     font-family: $ff-body;
     line-height: 1.5rem;
@@ -118,4 +124,49 @@ body {
 
   color: white;
   background-color: $primary-violet;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 1440px !important;
+    background-image: url(/images/bg-desktop.svg);
+  }
+  .logo {
+    height: 2.5rem;
+  }
+  .huddle {
+    @include flex(row, 2.5rem);
+    justify-content: center;
+    text-align: left;
+    &__image {
+      width: 50%;
+    }
+    &__container {
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    &__paragraph span {
+      display: block;
+    }
+
+    &__button {
+      align-self: flex-start;
+      margin: 0;
+      text-align: center;
+
+      padding: 1rem 3.5rem;
+
+      font-size: 1rem;
+    }
+  }
+
+  .socials {
+    font-size: 1.75rem;
+    justify-content: flex-end;
+  }
 }

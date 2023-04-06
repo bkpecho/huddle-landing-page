@@ -18,6 +18,7 @@ body {
   background-color: hsl(257, 40%, 49%);
   max-width: 375px;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 .logo {
@@ -44,6 +45,9 @@ body {
   font-weight: 600;
   line-height: 2rem;
 }
+.huddle__fans {
+  display: inline-block;
+}
 .huddle__paragraph {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
@@ -67,4 +71,45 @@ body {
   font-size: 1.25rem;
   color: white;
   background-color: hsl(257, 40%, 49%);
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 1440px !important;
+    background-image: url(/images/bg-desktop.svg);
+  }
+  .logo {
+    height: 2.5rem;
+  }
+  .huddle {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    text-align: left;
+  }
+  .huddle__image {
+    width: 50%;
+  }
+  .huddle__container {
+    justify-content: center;
+  }
+  .huddle__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .huddle__paragraph span {
+    display: block;
+  }
+  .huddle__button {
+    align-self: flex-start;
+    margin: 0;
+    text-align: center;
+    padding: 1rem 3.5rem;
+    font-size: 1rem;
+  }
+  .socials {
+    font-size: 1.75rem;
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=style.css.map */
