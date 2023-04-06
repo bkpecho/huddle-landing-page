@@ -63,6 +63,16 @@ body {
   background-color: white;
   cursor: pointer;
 }
+.huddle__button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  box-shadow: 0px 0px 8px 2px #412f6f;
+}
+.huddle__button:active {
+  background-color: #da34da;
+  color: white;
+  box-shadow: 0px 0px 8px 2px #412f6f;
+}
 
 .socials {
   display: flex;
@@ -75,6 +85,12 @@ body {
 }
 .socials * {
   cursor: pointer;
+}
+.socials *:hover {
+  color: #da34da;
+}
+.socials *:active {
+  color: hsl(300, 69%, 71%);
 }
 
 @media screen and (min-width: 1080px) {
@@ -112,24 +128,8 @@ body {
     padding: 1rem 3.5rem;
     font-size: 1rem;
   }
-  .huddle__button:hover {
-    background-color: hsl(300, 69%, 71%);
-    color: white;
-    box-shadow: 0px 0px 8px 2px #412f6f;
-  }
-  .huddle__button:active {
-    background-color: #da34da;
-    color: white;
-    box-shadow: 0px 0px 8px 2px #412f6f;
-  }
   .socials {
     font-size: 1.75rem;
     justify-content: flex-end;
-  }
-  .socials *:hover {
-    color: #da34da;
-  }
-  .socials *:active {
-    color: hsl(300, 69%, 71%);
   }
 }/*# sourceMappingURL=style.css.map */
