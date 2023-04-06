@@ -163,21 +163,30 @@ body {
   }
 }
 
+@media screen and (min-width: 380px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+  }
+}
+
 @media screen and (min-width: 1080px) {
   body {
     max-width: 1440px !important;
-    background-image: url(/images/bg-desktop.svg);
+    max-height: 100vh;
   }
   .logo {
     height: 2.5rem;
   }
   .huddle {
     @include flex(row, 2.5rem);
+    padding: 5rem 0 2rem 0;
     justify-content: center;
     text-align: left;
+
     &__image {
       width: 50%;
     }
+
     &__container {
       justify-content: center;
     }
