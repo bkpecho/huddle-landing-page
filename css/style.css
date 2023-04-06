@@ -116,27 +116,25 @@ body {
     max-height: 100vh;
   }
   .logo {
-    height: 2.5rem;
+    height: 3rem;
   }
   .huddle {
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
-    padding: 5rem 0 2rem 0;
+    padding: 3rem 0 2rem 0;
     text-align: left;
   }
   .huddle__image {
     width: 50%;
   }
-  .huddle__container {
-    justify-content: center;
-  }
   .huddle__title {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
-  .huddle__paragraph span {
-    display: block;
+  .huddle__paragraph {
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
   .huddle__button {
     align-self: flex-start;

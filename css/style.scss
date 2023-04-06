@@ -175,28 +175,25 @@ body {
     max-height: 100vh;
   }
   .logo {
-    height: 2.5rem;
+    height: 3rem;
   }
   .huddle {
     @include flex(row, 2.5rem);
-    padding: 5rem 0 2rem 0;
+    padding: 3rem 0 2rem 0;
     text-align: left;
 
     &__image {
       width: 50%;
     }
 
-    &__container {
-      justify-content: center;
-    }
-
     &__title {
-      font-size: 2rem;
-      line-height: 3rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
     }
 
-    &__paragraph span {
-      display: block;
+    &__paragraph {
+      font-size: 1.25rem;
+      line-height: 2rem;
     }
 
     &__button {
